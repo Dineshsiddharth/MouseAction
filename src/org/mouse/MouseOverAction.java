@@ -26,6 +26,17 @@ public class MouseOverAction {
 		WebElement mouse = driver.findElement(By.xpath("//div[@title='Java']"));
 		act.moveToElement(mouse).perform();
 		
+driver.navigate().refresh();
+
+WebElement mouseOver1 = driver.findElement(By.xpath("//div[@title='Courses']"));
+Actions act1=new Actions(driver);
+act1.moveToElement(mouseOver1).perform();
+driver.navigate().refresh();
+
+WebElement mouseOver2= driver.findElement(By.xpath("//div[@title='Courses']"));
+Actions act2=new Actions(driver);
+act2.moveToElement(mouseOver2).perform();
+
 		Thread.sleep(4000);
 		WebElement close1 = driver.findElement(By.className("close"));
 		close1.click();
@@ -34,6 +45,12 @@ public class MouseOverAction {
 		act1.moveToElement(mouseOver1).perform();
 		WebElement mouse1 = driver.findElement(By.xpath("//div[@title='Java']"));
 		act.moveToElement(mouse1).perform();
+
+		
+		
+
+		
+
 	  }
 	  
 
